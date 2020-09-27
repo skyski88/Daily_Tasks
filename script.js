@@ -9,11 +9,11 @@ var currentTime = moment().hours()
 
 $("#currentTime").text(moment().format('MMMM Do YYYY, h:mm:ss a'))
 
-for (let i = 9; i <= 17; i++) {
+for (let i = 8; i <= 17; i++) {
     var value = localStorage.getItem(i)
     $("#eventInput-" + i).val(value)
     if (i < currentTime) {
-        $("#eventInput-" + i).addClass("bg-primary")
+        $("#eventInput-" + i).addClass("bg-success")
     }
     else if (i == currentTime) {
         $("#eventInput-" + i).addClass("bg-info")
