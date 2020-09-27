@@ -18,4 +18,7 @@ for (let i = 9; i <= 17; i++) {
     else if (i == currentTime) {
         $("#eventInput-" + i).addClass("bg-info")
     }
+    else {
+        $("#eventInput-" + i).addClass("bg-warning")
+    }
 }
